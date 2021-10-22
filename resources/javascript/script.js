@@ -33,9 +33,11 @@ nextButton.onclick = function(){
     let quoteToPrint = quotesArray[Math.floor(Math.random() * quotesArray.length)]
     //select where it will be printed
     document.getElementById('placeToPrint').innerHTML = `<h2> ${quoteToPrint} </h2>` ;
-
+    let limitFav = 0;
     favButton.onclick = function(){
-        addToFav(quoteToPrint)
+        if(limitFav === 0){
+        addToFav(quoteToPrint)}
+        limitFav++;
     }
 
 }
