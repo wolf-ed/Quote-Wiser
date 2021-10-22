@@ -20,8 +20,10 @@ const addToFav = (favQuote) => {
     favsArray.push(favQuote);
     }
 
-    //TODO function to compare quote with favsArray, so user can't add same quote twice
 
+const compareQuote = (quote) => {
+ return favsArray.some(fav => quote ===fav)
+}
 
 //select button we will link
 let nextButton = document.getElementById('nextb');
@@ -36,8 +38,10 @@ nextButton.onclick = function(){
     document.getElementById('placeToPrint').innerHTML = `<h2> ${quoteToPrint} </h2>` ;
     let limitFav = 0;
     favButton.onclick = function(){
-        if(limitFav === 0){
-        addToFav(quoteToPrint)}
+        if(limitFav === 0 && !compareQuote(quoteToPrint)){
+        addToFav(quoteToPrint)}else{
+            document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
+        }
         limitFav++;
     }
 
@@ -48,7 +52,7 @@ printFavsButton.onclick = function(){
         return a + "<br><br>";
        })
        if(favsArray.length === 0){
-        document.getElementById('placeToPrint').innerHTML = `<h2> You don't have favorite quotes yet. </h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You don't have favorite quotes yet. </h2>` ;
        }else{
         document.getElementById('placeToPrint').innerHTML = `<h2> ${allFavs.join('\n')} </h2>` ;
        }

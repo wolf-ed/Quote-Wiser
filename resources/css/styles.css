@@ -21,7 +21,9 @@ body {
     background-color: black;
 }
 
-
+h2#warning {
+    color: red;
+}
 
 article {
     padding: 2em 3em;
