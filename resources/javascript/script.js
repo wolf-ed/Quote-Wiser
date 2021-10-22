@@ -20,6 +20,7 @@ const addToFav = (favQuote) => {
     favsArray.push(favQuote);
     }
 
+    //TODO function to compare quote with favsArray, so user can't add same quote twice
 
 
 //select button we will link
@@ -44,7 +45,7 @@ nextButton.onclick = function(){
 
 printFavsButton.onclick = function(){
     let allFavs = favsArray.map((a) =>{
-        return a + "<br>";
+        return a + "<br><br>";
        })
        if(favsArray.length === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2> You don't have favorite quotes yet. </h2>` ;
