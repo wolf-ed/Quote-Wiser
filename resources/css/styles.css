@@ -1,12 +1,13 @@
 header {
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 30px;
+    padding: 2em auto 2em auto;
     justify-content: center;
     background-color: black;
     text-align: center;
-    height: 10em;
     display: block;
+    border-bottom: white;
+    border-style:solid;
 }
 
 h1, h2 {
@@ -20,15 +21,10 @@ body {
     background-color: black;
 }
 
-footer {
-    padding: 3em 3em;
-    background-color: black;
-    height: 5em;
-    justify-content: center;
-}
+
 
 article {
-    padding: 3em 3em;
+    padding: 2em 3em;
     min-height: 20em;
     text-align: center;
     background-color: black;
@@ -101,13 +97,6 @@ box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
 outline: none;
 }
 
-/*
-footer {
-   margin-top: 1em;
-   max-height: 1em;
-   border-top: 0.25em solid white;
-   text-align: center;
-}*/
 footer {
     margin-top: 2em;
     padding: 1em;
