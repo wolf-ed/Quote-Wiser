@@ -1,9 +1,35 @@
 let quotesArray = [];
+const newQuote = (_sentence) =>{
+    const quote ={
+    _sentence: _sentence,
+    _author: 'Unknown or undefined Author.',
+    fav: false,
+    likes: 0,
+    set sentence(newSentence){
+        this._sentence = newSentence;
+    },
+    set author(newAuthor){
+        this._author = newAuthor
+    },
+    get sentence(){
+        if(this._sentence){
+            return this._sentence;
+        }else{
+            return 'No quote.';
+        };
+    },
+    get author(){
+        return this._author;
+    }
+};
+return quote;
+};
 let favsArray = [];
 
 const addQuote = (aquote) => {
-quotesArray.push(aquote);
-}
+quotesArray.push(newQuote(aquote));
+};
+
 addQuote('If you want to achieve greatness stop asking for permission.');
 addQuote('Things work out best for those who make the best of how things work out.');
 addQuote('To live a creative life, we must lose our fear of being wrong.');
@@ -18,7 +44,7 @@ addQuote('Successful entrepreneurs are givers and not takers of positive energy.
 
 const addToFav = (favQuote) => {
     favsArray.push(favQuote);
-    }
+}
 
 
 const compareQuote = (quote) => {
@@ -33,19 +59,20 @@ let printFavsButton = document.getElementById('printFavs');
 
 //function to print message with date and counter(of times pressed)
 nextButton.onclick = function(){
-    let quoteToPrint = quotesArray[Math.floor(Math.random() * quotesArray.length)]
+    let random = Math.floor(Math.random() * quotesArray.length);
+    let quoteToPrint = quotesArray[random].sentence;
     //select where it will be printed
     document.getElementById('placeToPrint').innerHTML = `<h2> ${quoteToPrint} </h2>` ;
     let limitFav = 0;
     favButton.onclick = function(){
         if(limitFav === 0 && !compareQuote(quoteToPrint)){
+            quotesArray[random].fav = true;
         addToFav(quoteToPrint)}else{
             document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
         }
         limitFav++;
     }
-
-}
+};
 
 printFavsButton.onclick = function(){
     let allFavs = favsArray.map((a) =>{
