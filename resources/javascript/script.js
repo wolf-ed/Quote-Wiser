@@ -61,8 +61,11 @@ let printFavsButton = document.getElementById('printFavs');
 nextButton.onclick = function(){
     let random = Math.floor(Math.random() * quotesArray.length);
     let quoteToPrint = quotesArray[random].sentence;
+
     //select where it will be printed
     document.getElementById('placeToPrint').innerHTML = `<h2> ${quoteToPrint} </h2>` ;
+
+    //implement add to favs
     let limitFav = 0;
     favButton.onclick = function(){
         if(limitFav === 0 && !compareQuote(quoteToPrint)){
