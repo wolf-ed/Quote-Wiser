@@ -733,16 +733,41 @@ let favButton = document.getElementById('favb');
 let printFavsButton = document.getElementById('printFavs');
 let printPrevButton = document.getElementById('prev');
 
-let orderDisplayed = -1;
+let compare = (arr, num) =>{
+    return arr.some(numb => num === numb)
+   }
+   
+let generateArrRandomNum = arrLength => {
+    let arrRan = [];
+    for(let i = 0; i < arrLength ; i++){
+    let random = Math.floor(Math.random() * arrLength)
+    if(compare(arrRan, random)){
+        i--
+    }else{
+        arrRan.push(random)
+    }
+
+
+    }//end for
+    return arrRan
+}//end generateArrRandomNum
+   
+let arrayRandom = generateArrRandomNum(finalArray.length);
+
+
+
+let incDecrorderDisplayed = -1; //this is the variable that is used to increase or decrease the orderDisplayed variable. Its value is in real order: 0, 1, 2...
+let orderDisplayed = arrayRandom[incDecrorderDisplayed]; //this is the index that will be used to determine in which Quote the functions are in each moment. All of them call to the name "orderDisplayed"
+
 
 
 
 //function to print message with date and counter(of times pressed)
 nextButton.onclick = function(){
    // let random = Math.floor(Math.random() * finalArray.length);
-   orderDisplayed = orderDisplayed +1;
+   incDecrorderDisplayed = incDecrorderDisplayed +1;
   //  let quoteToPrint = finalArray[orderDisplayed]._sentence;
-    
+  orderDisplayed = arrayRandom[incDecrorderDisplayed];
 //quotesArray por finalArray
     //select where it will be printed
     document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
@@ -779,12 +804,13 @@ printPrevButton.onclick = function(){
     //let getIndexRandom = orderDisplayed.length -2;
     //let getIndexFinalArr = orderDisplayed[getIndexRandom];
     //document.getElementById('placeToPrint').innerHTML = `<h2> lengh of orderDisplayed:   ${getIndex}</h2>` ;
-    if(orderDisplayed > 0){
-   orderDisplayed = orderDisplayed -1 ;
+    if(incDecrorderDisplayed > 0){
+        incDecrorderDisplayed = incDecrorderDisplayed -1 ;
+        orderDisplayed = arrayRandom[incDecrorderDisplayed];
    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
-    }else if(orderDisplayed === 0){
+    }else if(incDecrorderDisplayed === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote to the one you just saw. Press Next again to see a second quote.</h2>` ;
-    }else if(orderDisplayed === -1){
+    }else if(incDecrorderDisplayed === -1){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote. Press Next to see the first one.</h2>` ;
     }
 }
