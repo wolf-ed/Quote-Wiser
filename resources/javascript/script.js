@@ -783,7 +783,7 @@ printPrevButton.onclick = function(){
    orderDisplayed = orderDisplayed -1 ;
    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
     }else if(orderDisplayed === 0){
-        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>This is no previous Quote. Press Next again.</h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote to the one you just saw. Press Next again to see a second quote.</h2>` ;
     }else if(orderDisplayed === -1){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote. Press Next to see the first one.</h2>` ;
     }
