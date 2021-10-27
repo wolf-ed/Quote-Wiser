@@ -746,19 +746,19 @@ nextButton.onclick = function(){
 //quotesArray por finalArray
     //select where it will be printed
     document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
+};
+
 
 //implement add to favs
-let limitFav = 0; 
 favButton.onclick = function(){
-    if(limitFav === 0 && !compareQuote(finalArray[orderDisplayed]._sentence)){
+    if(!compareQuote(finalArray[orderDisplayed]._sentence)){
         finalArray[orderDisplayed].fav = true;
-    addToFav(finalArray[orderDisplayed]._sentence)}else{
+    addToFav(finalArray[orderDisplayed]._sentence)
+    }else{
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
     }
-    limitFav++;
-}
 
-};
+}
 
 
 
