@@ -734,6 +734,9 @@ let printFavsButton = document.getElementById('printFavs');
 let printPrevButton = document.getElementById('prev');
 
 let orderDisplayed = -1;
+
+
+
 //function to print message with date and counter(of times pressed)
 nextButton.onclick = function(){
    // let random = Math.floor(Math.random() * finalArray.length);
@@ -779,8 +782,10 @@ printPrevButton.onclick = function(){
     if(orderDisplayed > 0){
    orderDisplayed = orderDisplayed -1 ;
    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
-    }else{
-        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>This is the very first Quote. Press Next.</h2>` ;
+    }else if(orderDisplayed === 0){
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>This is no previous Quote. Press Next again.</h2>` ;
+    }else if(orderDisplayed === -1){
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote. Press Next to see the first one.</h2>` ;
     }
 }
     
