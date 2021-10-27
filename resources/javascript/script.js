@@ -722,10 +722,6 @@ const addToFav = (favQuote) => {
     favsArray.push(favQuote);
 }
 
-const compareQuote = (quote) => {
-    return favsArray.some(fav => quote ===fav)
-   }
-
 
 //select button we will link
 let nextButton = document.getElementById('nextb');
@@ -776,7 +772,7 @@ nextButton.onclick = function(){
 
 //implement add to favs
 favButton.onclick = function(){
-    if(!compareQuote(finalArray[orderDisplayed]._sentence)){
+    if(!compare(favsArray, finalArray[orderDisplayed]._sentence)){
         finalArray[orderDisplayed].fav = true;
     addToFav(finalArray[orderDisplayed]._sentence)
     }else{
