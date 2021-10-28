@@ -772,9 +772,12 @@ nextButton.onclick = function(){
 
 //implement add to favs
 favButton.onclick = function(){
-    if(!compare(favsArray, finalArray[orderDisplayed]._sentence)){
+    if(incDecrorderDisplayed === -1){
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> There is no quote to add, press Next to see the first quote. </h2>` ;
+       }else if(!compare(favsArray, finalArray[orderDisplayed]._sentence)){
         finalArray[orderDisplayed].fav = true;
     addToFav(finalArray[orderDisplayed]._sentence)
+    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <h2 id='warning'> Quote added to Favs </h2>`
     }else{
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
     }
