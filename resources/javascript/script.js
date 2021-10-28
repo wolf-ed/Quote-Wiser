@@ -762,7 +762,7 @@ let orderDisplayed = arrayRandom[incDecrorderDisplayed]; //this is the index tha
 nextButton.onclick = function(){
    // let random = Math.floor(Math.random() * finalArray.length);
    incDecrorderDisplayed = incDecrorderDisplayed +1;
-   if(incDecrorderDisplayed === 316){
+   if(incDecrorderDisplayed === finalArray.length){
     incDecrorderDisplayed = 0;
     document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You saw all the quotes available! </h2>` ;
    }else{
