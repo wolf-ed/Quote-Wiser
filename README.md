@@ -29,3 +29,13 @@ This is a short project, where you can:
 * VisualStudio Code
 
 ## Examples
+
+### On SmartPhone
+![photo6037281996247512666](https://user-images.githubusercontent.com/91706719/139034498-10ef8060-51eb-4586-863e-ba008e0b4d8f.jpg)
+
+
+### On a Laptop's Web browser
+![2](https://user-images.githubusercontent.com/91706719/139034236-8272aab3-0bba-4e30-885c-8bc8d2ac1909.png)
+
+
+
