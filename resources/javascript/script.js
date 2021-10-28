@@ -793,7 +793,7 @@ printFavsButton.onclick = function(){
        if(favsArray.length === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You don't have favorite quotes yet. </h2>` ;
        }else{
-        document.getElementById('placeToPrint').innerHTML = `<h2> ${allFavs.join('\n')} </h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Favs: </h2><h2> ${allFavs.join('\n')} </h2>` ;
        }
    /*Pay close attention to the .join('\n'), without it, when there are more than 1 element, it will print a comma between them. */
 
