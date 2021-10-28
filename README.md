@@ -36,6 +36,8 @@ This is a short project, where you can:
 
 ### On a Laptop's Web browser
 ![2](https://user-images.githubusercontent.com/91706719/139034236-8272aab3-0bba-4e30-885c-8bc8d2ac1909.png)
+![3](https://user-images.githubusercontent.com/91706719/139347399-4554d0da-0e0b-4742-ba68-994b5983fff4.png)
+![4](https://user-images.githubusercontent.com/91706719/139347403-dd41ccee-67ff-4b0b-be33-0beb8a415506.png)
 
 
 
