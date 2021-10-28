@@ -792,6 +792,8 @@ printFavsButton.onclick = function(){
        })
        if(favsArray.length === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You don't have favorite quotes yet. </h2>` ;
+       }else if(favsArray.length === 1){
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Fav: </h2><h2> ${allFavs.join('\n')} </h2>` ;
        }else{
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Favs: </h2><h2> ${allFavs.join('\n')} </h2>` ;
        }
