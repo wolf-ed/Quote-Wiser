@@ -12,7 +12,7 @@
 
 ## Introduction
 
-This is a short project, where you can:
+This is a short project, with these functionalities:
 * Go back to previous quotes         --> Prev
 * Add quotes to your Favorites       --> Add Fav
 * Print quotes in a random order     --> Next
