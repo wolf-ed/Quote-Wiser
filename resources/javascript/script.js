@@ -781,7 +781,7 @@ favButton.onclick = function(){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> There is no quote to add, press Next to see the first quote. </h2>` ;
        }else if(!compare(favsArray, finalArray[orderDisplayed]._sentence)){
         finalArray[orderDisplayed].fav = true;
-    addToFav(finalArray[orderDisplayed]._sentence)
+    addToFav(finalArray[orderDisplayed])
     document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <h2 id='warning'> Quote added to Favs </h2>`
     }else{
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
@@ -793,7 +793,8 @@ favButton.onclick = function(){
 
 printFavsButton.onclick = function(){
     let allFavs = favsArray.map((a) =>{
-        return a + "<br><br>";
+      //  return a._sentence + "<br><span class='authorsquotes'> By" + a._author + "</span><br><br>";
+      return `${a._sentence} <br><span id="authorsquotes"> By  ${a._author} </span><br><br>`;
        })
        if(favsArray.length === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You don't have favorite quotes yet. </h2>` ;
