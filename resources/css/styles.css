@@ -127,7 +127,7 @@ footer {
   h2 span#authorsquotes{
       width: fit-content;
       font-style: italic;
-      display: block;
-      margin: 0em 5em auto auto;
       background-color: black;
+      position: relative;
+      left: 15%
   }
