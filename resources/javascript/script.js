@@ -774,12 +774,14 @@ nextButton.onclick = function(){
    }
 };
 
-
+let compareQuote = (arr, num) =>{
+    return arr.some(numb => num === numb._sentence)
+   }
 //implement add to favs
 favButton.onclick = function(){
     if(incDecrorderDisplayed === -1){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> There is no quote to add, press Next to see the first quote. </h2>` ;
-       }else if(!compare(favsArray, finalArray[orderDisplayed]._sentence)){
+       }else if(!compareQuote(favsArray, finalArray[orderDisplayed]._sentence)){
         finalArray[orderDisplayed].fav = true;
     addToFav(finalArray[orderDisplayed])
     document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <h2 id='warning'> Quote added to Favs </h2>`
