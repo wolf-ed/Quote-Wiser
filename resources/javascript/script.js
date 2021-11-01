@@ -814,7 +814,7 @@ printPrevButton.onclick = function(){
     if(incDecrorderDisplayed > 0){
         incDecrorderDisplayed = incDecrorderDisplayed -1 ;
         orderDisplayed = arrayRandom[incDecrorderDisplayed];
-   document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
+   document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <span id="authorsquotes">by ${finalArray[orderDisplayed]._author} </span></h2>` ;
     }else if(incDecrorderDisplayed === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote to the one you just saw. Press Next again to see a second quote.</h2>` ;
     }else if(incDecrorderDisplayed === -1){

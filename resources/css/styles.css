@@ -38,7 +38,10 @@ article h2 {
     justify-content: center;
     color: white;
     text-align: center;
+    margin: 3% 5%;
+    background-color: black;
 }
+
 
 section {
     width: fit-content;
@@ -116,11 +119,15 @@ footer {
 
   footer a {
     padding: 1em 2em;
-      font-weight: bold;
-      font-size: 1.5em;
-      color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
   }
 
-   #authorsquotes{
+  h2 span#authorsquotes{
+      width: fit-content;
       font-style: italic;
+      display: block;
+      margin: 0em 5em auto auto;
+      background-color: black;
   }
