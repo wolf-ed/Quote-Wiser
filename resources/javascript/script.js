@@ -770,7 +770,7 @@ nextButton.onclick = function(){
   orderDisplayed = arrayRandom[incDecrorderDisplayed];
 //quotesArray por finalArray  
     //select where it will be printed
-    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> by ${finalArray[orderDisplayed]._author}</h2>` ;
+    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <span id="authorsquotes">by ${finalArray[orderDisplayed]._author} </span></h2>` ;
    }
 };
 

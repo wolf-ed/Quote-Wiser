@@ -25,7 +25,8 @@ h2#warning {
     color: red;
 }
 
-article {
+article .quotesBox{
+    width: fit-content;
     padding: 2em 3em;
     min-height: 20em;
     text-align: center;
