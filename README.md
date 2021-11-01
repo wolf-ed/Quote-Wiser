@@ -32,6 +32,7 @@ This is a short project, with these functionalities:
 
 ### On SmartPhone
 ![photo6037281996247512666](https://user-images.githubusercontent.com/91706719/139034498-10ef8060-51eb-4586-863e-ba008e0b4d8f.jpg)
+![duckduckgo](https://user-images.githubusercontent.com/91706719/139684499-6081c1ea-4a13-4e8c-b6f9-31f2214d4389.jpg)
 
 
 ### On a Laptop's Web browser
