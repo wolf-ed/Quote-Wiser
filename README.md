@@ -8,7 +8,7 @@
 * [Exampples](#Examples)
 
 ## Link
-### **https://wolf-ed.github.io/quotes-manager/**
+### **https://wolf-ed.github.io/Quoter/**
 
 ## Introduction
 
