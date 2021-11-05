@@ -8,7 +8,7 @@
 * [Exampples](#Examples)
 
 ## Link
-### **https://wolf-ed.github.io/Quote-Wiser/**
+### **https://wolf-ed.github.io/quote-wiser/**
 
 ## Introduction
 
