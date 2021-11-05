@@ -1,4 +1,4 @@
-# Quotes-manager:  Quoter
+# Quotes-manager:  Quote-Wiser
 
 ## Author:  Ed Wolf
 ## Table of contents
@@ -8,7 +8,7 @@
 * [Exampples](#Examples)
 
 ## Link
-### **https://wolf-ed.github.io/Quoter/**
+### **https://wolf-ed.github.io/Quote-Wiser/**
 
 ## Introduction
 
