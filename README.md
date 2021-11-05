@@ -1,4 +1,4 @@
-# Quotes-manager
+# Quotes-manager:  Quoter
 
 ## Author:  Ed Wolf
 ## Table of contents
