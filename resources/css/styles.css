@@ -20,6 +20,7 @@ h1, h2 {
 }
 
 body {
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     display: block;
@@ -30,12 +31,10 @@ h2#warning {
     color: red;
 }
 
-article .quotesBox{
-    width: fit-content;
-    padding: 2em 3em;
-    min-height: 20em;
-    text-align: center;
-    background-color: black;
+.quotesBox {
+   
+    min-height: 10rem;
+  
 }
 
 article h2 {
@@ -48,7 +47,7 @@ article h2 {
 }
 
 
-section {
+section.buttonsBox {
     width: fit-content;
     padding: 0.5em;
     background-color: black;
@@ -60,7 +59,7 @@ section {
 
 section button {
     display: inline; 
-    margin: 0.5em 1em;
+    margin: 0.5em 0.5em;
 }
 
 
@@ -75,7 +74,7 @@ button {
     direction: ltr;
     display: block;
     font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: -.022em;
     line-height: 1.47059;
@@ -109,8 +108,8 @@ button:focus {
 }
 
 footer {
-    margin-top: 2em;
-    padding: 1em;
+    margin-top: 0.5em;
+    padding: 0.5rem;
     background-color: black;
     text-align: center;
     border-top: white;
@@ -135,4 +134,7 @@ footer {
       background-color: black;
       position: relative;
       left: 15%
+  }
+  .authorsquotes {
+     padding-right: 1em;;
   }
