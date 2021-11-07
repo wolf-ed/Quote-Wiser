@@ -11,8 +11,7 @@ header {
     background-color: black;
     text-align: center;
     display: block;
-    border-bottom: white;
-    border-style:solid;
+    border-bottom: 0.25em solid white;
 }
 
 h1, h2 {
@@ -112,7 +111,7 @@ footer {
     padding: 0.5rem;
     background-color: black;
     text-align: center;
-    border-top: white;
+    border-top: 0.25em solid white;
     border-style:solid;
   }
   footer h2 {
