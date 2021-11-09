@@ -1,5 +1,53 @@
 let sourceQuote =  
-     `A bad servant will not make a good master.
+     `I believe in the supreme worth of the individual and in his right to life, liberty and the pursuit of happiness.
+    John D. Rockefeller
+    Don't be affraid to give up the good for the great
+    John D. Rockefeller
+    I believe that thrift is essential to well-ordered living.
+    John D. Rockefeller
+    If you want to succeed you should strike out on new paths, rather than travel the worn paths of accepted success.
+    John D. Rockefeller
+    I had no ambition to make a fortune. Mere money-making has never been my goal, I had an ambition to build.
+    John D. Rockefeller
+    A friendship founded on business is better than a business founded on friendship.
+    John D. Rockefeller
+    When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.
+    Henry Ford
+    Failure is simply the opportunity to begin again, this time more intelligently.
+    Henry Ford
+    Obstacles are those frightful things you see when you take your eyes off your goal.
+    Henry Ford
+    If everyone is moving forward together, then success takes care of itself.
+    Henry Ford
+    Quality means doing it right when no one is looking.
+    Henry Ford
+    If you think you can do a thing or think you can't do a thing, you're right.
+    Henry Ford
+    A business that makes nothing but money is a poor business.
+    Henry Ford
+    You can't build a reputation on what you are going to do.
+    Henry Ford
+    My best friend is the one who brings out the best in me.
+    Henry Ford
+    One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn't do.
+    Henry Ford
+    It has been my observation that most people get ahead during the time that others waste.
+    Henry Ford
+    Nothing is particularly hard if you divide it into small jobs.
+    Henry Ford
+    Before everything else, getting ready is the secret of success.
+    Henry Ford
+    Most people spend more time and energy going around problems that in trying to solve them.
+    Henry Ford
+    A business absolutely devoted to service will have only to worry about profits. They will be embarrassingly large.
+    Henry Ford
+    Even a mistake may turn out to be the one thing necessary to a worthwhile achievement.
+    Henry Ford
+    The only real security that a man can have in this world is a reserve of knowledge, experience and ability.
+    Henry Ford
+    There are no big problems, there are just a lot of little problems.
+    Henry Ford
+    A bad servant will not make a good master.
     Anon.
     A good leader leads the people from above them. A great leader leads the people from within them.
     M. D. Arnold
