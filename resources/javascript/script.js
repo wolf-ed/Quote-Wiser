@@ -1,4 +1,3 @@
-
 import { sourceQuote } from "./quotes.js"
 
 const quotesArray = sourceQuote.split(/\r?\n/);
@@ -47,7 +46,7 @@ const authorMaker = (newAuthor) => {
  return author;
 };
 
-let quotesAsembly = (arr) => {
+const quotesAsembly = (arr) => {
     let newArr = [];
     for(let i = 0; i < arr.length; i = i + 2){
         newArr.push(quotesMaker(arr[i], arr[i+1]));
@@ -61,7 +60,7 @@ const printAuthors = arrPrint => {
     arrPrint.forEach(quote => console.log(`${quote._author} \n\n`));
 } 
 
-let getAuthors = (arr) =>{
+const getAuthors = (arr) =>{
     let authorsArray = []; //array of only name of authors
     let returnAuthorsObjects = []; //array of objects-authors with authors and number of quotes
  
@@ -92,16 +91,16 @@ const addToFav = (favQuote) => {
 
 
 //select button we will link
-let nextButton = document.getElementById('nextb');
-let favButton = document.getElementById('favb');
-let printFavsButton = document.getElementById('printFavs');
-let printPrevButton = document.getElementById('prev');
+const nextButton = document.getElementById('nextb');
+const favButton = document.getElementById('favb');
+const printFavsButton = document.getElementById('printFavs');
+const printPrevButton = document.getElementById('prev');
 
-let compare = (arr, num) =>{
+const compare = (arr, num) =>{
     return arr.some(numb => num === numb)
    }
    
-let generateArrRandomNum = arrLength => {
+const generateArrRandomNum = arrLength => {
     let arrRan = [];
     for(let i = 0; i < arrLength ; i++){
     let random = Math.floor(Math.random() * arrLength)
@@ -142,7 +141,7 @@ nextButton.onclick = function(){
    }
 };
 
-let compareQuote = (arr, num) =>{
+const compareQuote = (arr, num) =>{
     return arr.some(numb => num === numb._sentence)
    }
 //implement add to favs
