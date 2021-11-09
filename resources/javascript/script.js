@@ -191,17 +191,3 @@ printPrevButton.onclick = function(){
     }
 }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
