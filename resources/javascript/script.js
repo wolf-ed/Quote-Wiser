@@ -127,15 +127,14 @@ let orderDisplayed = arrayRandom[incDecrorderDisplayed]; //this is the index tha
 
 //function to print message with date and counter(of times pressed)
 nextButton.onclick = function(){
-   // let random = Math.floor(Math.random() * finalArray.length);
    incDecrorderDisplayed = incDecrorderDisplayed +1;
    if(incDecrorderDisplayed === finalArray.length){
     incDecrorderDisplayed = 0;
     document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You saw all the quotes available! </h2>` ;
    }else{
-  //  let quoteToPrint = finalArray[orderDisplayed]._sentence;
+
   orderDisplayed = arrayRandom[incDecrorderDisplayed];
-//quotesArray por finalArray  
+
     //select where it will be printed
     document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <span id="authorsquotes">by ${finalArray[orderDisplayed]._author} </span></h2> ` ;
    }
@@ -162,25 +161,24 @@ favButton.onclick = function(){
 
 printFavsButton.onclick = function(){
     let allFavs = favsArray.map((a) =>{
-      //  return a._sentence + "<br><span class='authorsquotes'> By" + a._author + "</span><br><br>";
       return `${a._sentence} <br><span id="authorsquotes"> By  ${a._author} </span><br><br>`;
        })
        if(favsArray.length === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You don't have favorite quotes yet. </h2>` ;
        }else if(favsArray.length === 1){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Fav: </h2><h2> ${allFavs.join('\n')} </h2>` ;
-       }else{
+       }else if(favsArray.length > 1 && favsArray.length < 3){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Favs: </h2><h2> ${allFavs.join('\n')} </h2>` ;
+       }else{
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Favs: </h2><h2> ${allFavs.join('\n')}  <a href="#title" class="navigationButton">Go back to the Top</a></h2>` ;
        }
+       //  
    /*Pay close attention to the .join('\n'), without it, when there are more than 1 element, it will print a comma between them. */
 
 }
 
 printPrevButton.onclick = function(){
-    //let getIndexRandom = orderDisplayed.length -2;
-    //let getIndexFinalArr = orderDisplayed[getIndexRandom];
-    //document.getElementById('placeToPrint').innerHTML = `<h2> lengh of orderDisplayed:   ${getIndex}</h2>` ;
-    if(incDecrorderDisplayed > 0){
+     if(incDecrorderDisplayed > 0){
         incDecrorderDisplayed = incDecrorderDisplayed -1 ;
         orderDisplayed = arrayRandom[incDecrorderDisplayed];
    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <span id="authorsquotes">by ${finalArray[orderDisplayed]._author} </span></h2>` ;
