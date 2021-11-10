@@ -1,4 +1,4 @@
-import { sourceQuote } from "./quotes.js"
+import { sourceQuote } from './quotes.js'
 
 const quotesArray = sourceQuote.split(/\r?\n/);
 
@@ -91,10 +91,10 @@ const addToFav = (favQuote) => {
 
 
 //select button we will link
-const nextButton = document.getElementById('nextb');
-const favButton = document.getElementById('favb');
-const printFavsButton = document.getElementById('printFavs');
-const printPrevButton = document.getElementById('prev');
+let nextButton = document.getElementById('nextb');
+let favButton = document.getElementById('favb');
+let printFavsButton = document.getElementById('printFavs');
+let printPrevButton = document.getElementById('prev');
 
 const compare = (arr, num) =>{
     return arr.some(numb => num === numb)
@@ -137,7 +137,7 @@ nextButton.onclick = function(){
   orderDisplayed = arrayRandom[incDecrorderDisplayed];
 //quotesArray por finalArray  
     //select where it will be printed
-    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <span id="authorsquotes">by ${finalArray[orderDisplayed]._author} </span></h2>` ;
+    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <span id="authorsquotes">by ${finalArray[orderDisplayed]._author} </span></h2> ` ;
    }
 };
 
@@ -190,4 +190,3 @@ printPrevButton.onclick = function(){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote. Press Next to see the first one.</h2>` ;
     }
 }
-    
