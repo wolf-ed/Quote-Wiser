@@ -124,9 +124,8 @@ let orderDisplayed = arrayRandom[incDecrorderDisplayed]; //this is the index tha
 
 
 
-
-//function to print message with date and counter(of times pressed)
-nextButton.onclick = function(){
+//function to print next Quote
+const printNextQuote = () => {
    incDecrorderDisplayed = incDecrorderDisplayed +1;
    if(incDecrorderDisplayed === finalArray.length){
     incDecrorderDisplayed = 0;
@@ -140,11 +139,13 @@ nextButton.onclick = function(){
    }
 };
 
+
 const compareQuote = (arr, num) =>{
     return arr.some(numb => num === numb._sentence)
    }
 //implement add to favs
-favButton.onclick = function(){
+
+const addQuoteToFav = () => {
     if(incDecrorderDisplayed === -1){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> There is no quote to add, press Next to see the first quote. </h2>` ;
        }else if(!compareQuote(favsArray, finalArray[orderDisplayed]._sentence)){
@@ -155,11 +156,10 @@ favButton.onclick = function(){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
     }
 
-}
+};
 
 
-
-printFavsButton.onclick = function(){
+const printAllFavs = () => {
     let allFavs = favsArray.map((a) =>{
       return `${a._sentence} <br><span id="authorsquotes"> By  ${a._author} </span><br><br>`;
        })
@@ -174,10 +174,10 @@ printFavsButton.onclick = function(){
        }
        //  
    /*Pay close attention to the .join('\n'), without it, when there are more than 1 element, it will print a comma between them. */
-
 }
 
-printPrevButton.onclick = function(){
+
+const prevQuote = () => {
      if(incDecrorderDisplayed > 0){
         incDecrorderDisplayed = incDecrorderDisplayed -1 ;
         orderDisplayed = arrayRandom[incDecrorderDisplayed];
@@ -187,4 +187,12 @@ printPrevButton.onclick = function(){
     }else if(incDecrorderDisplayed === -1){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'>There is no previous Quote. Press Next to see the first one.</h2>` ;
     }
-}
+};
+
+
+
+
+nextButton.addEventListener('click', printNextQuote);
+favButton.addEventListener('click', addQuoteToFav);
+printFavsButton.addEventListener('click', printAllFavs);
+printPrevButton.addEventListener('click', prevQuote);
