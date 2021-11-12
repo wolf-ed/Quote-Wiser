@@ -1,5 +1,33 @@
 let sourceQuote =  
-     `I believe in the supreme worth of the individual and in his right to life, liberty and the pursuit of happiness.
+     `When something is important enough, you do it even if the odds are not in your favor.
+    Elon Musk
+    If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it's not.
+    Elon Musk
+    Great companies are built on great products.
+    Elon Musk
+    I'd rather be optimistic and wrong than pessimistic and right.
+    Elon Musk
+    I think life on Earth must be about more than just solving problems... It's got to be something inspiring, even if it is vicarious.
+    Elon Musk
+    Discipline is the bridge between goals and accomplishment.
+    Jin Rohn
+    What lies in our power to do, lies in our power not to do.
+    Aristotle
+    There is no magic wand that can resolve our problems. The solution rests with our work and discipline.
+    Jose Eduardo dos Santos
+    Discipline is wisdom, and vice versa.
+    M. Scott Peck
+    Self-respect is the fruit of discipline; the sense of dignity grows with the ability to say no to oneself.
+    Abraham Joshua Heschel
+    For a man to conquer himself is the first and noblest of all victories.
+    Plato
+    Rule your mind or it will rule you.
+    Horace
+    Talent is nothing without dedication and discipline, and dedication and discipline is a talent in itself.
+    Luke Campbell
+    Discipline is the refining fire by which talent becomes ability.
+    Roy L. Smith
+    I believe in the supreme worth of the individual and in his right to life, liberty and the pursuit of happiness.
     John D. Rockefeller
     Don't be affraid to give up the good for the great
     John D. Rockefeller
