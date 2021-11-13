@@ -5,6 +5,12 @@ let sourceQuote =
     Elon Musk
     Great companies are built on great products.
     Elon Musk
+    If there is no struggle, there is no progress.
+    Frederick Douglass
+    I am a slow walker, but I never walk back.
+    Abraham Lincoln
+    Reading is essential for those who seek to rise above the ordinary.
+    Jim Rohn
     I'd rather be optimistic and wrong than pessimistic and right.
     Elon Musk
     I think life on Earth must be about more than just solving problems... It's got to be something inspiring, even if it is vicarious.
