@@ -151,7 +151,7 @@ const addQuoteToFav = () => {
        }else if(!compareQuote(favsArray, finalArray[orderDisplayed]._sentence)){
         finalArray[orderDisplayed].fav = true;
     addToFav(finalArray[orderDisplayed])
-    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <h2 id='warning'> Quote added to Favs </h2>`
+    document.getElementById('placeToPrint').innerHTML = `<h2> ${finalArray[orderDisplayed]._sentence} <br><br> <h2 id='successfulAction'> Quote added to Favs </h2>`
     }else{
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You already added that quote to favs. </h2>`
     }
@@ -166,11 +166,11 @@ const printAllFavs = () => {
        if(favsArray.length === 0){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> You don't have favorite quotes yet. </h2>` ;
        }else if(favsArray.length === 1){
-        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Fav: </h2><h2> ${allFavs.join('\n')} </h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='successfulAction'> Your Fav: </h2><h2> ${allFavs.join('\n')} </h2>` ;
        }else if(favsArray.length > 1 && favsArray.length < 3){
-        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Favs: </h2><h2> ${allFavs.join('\n')} </h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='successfulAction'> Your Favs: </h2><h2> ${allFavs.join('\n')} </h2>` ;
        }else{
-        document.getElementById('placeToPrint').innerHTML = `<h2 id='warning'> Your Favs: </h2><h2> ${allFavs.join('\n')}  <a href="#title" class="navigationButton">Go back to the Top</a></h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='successfulAction'> Your Favs: </h2><h2> ${allFavs.join('\n')}  <a href="#title" class="navigationButton">Go back to the Top</a></h2>` ;
        }
        //  
    /*Pay close attention to the .join('\n'), without it, when there are more than 1 element, it will print a comma between them. */
