@@ -170,7 +170,7 @@ const printAllFavs = () => {
        }else if(favsArray.length > 1 && favsArray.length < 3){
         document.getElementById('placeToPrint').innerHTML = `<h2 id='successfulAction'> Your Favs: </h2><h2> ${allFavs.join('\n')} </h2>` ;
        }else{
-        document.getElementById('placeToPrint').innerHTML = `<h2 id='successfulAction'> Your Favs: </h2><h2> ${allFavs.join('\n')}  <a href="#title" class="navigationButton">Go back to the Top</a></h2>` ;
+        document.getElementById('placeToPrint').innerHTML = `<h2 id='successfulAction'> Your Favs: </h2><h2> ${allFavs.join('\n')}  <a href="#" class="navigationButton">Go back to the Top</a></h2>` ;
        }
        //  
    /*Pay close attention to the .join('\n'), without it, when there are more than 1 element, it will print a comma between them. */
