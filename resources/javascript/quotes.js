@@ -89,8 +89,6 @@ let sourceQuote =
     M. D. Arnold
     True leadership stems from individuality that is honestly and sometimes imperfectly expressed… Leaders should strive for authenticity over perfection.
     Sheryl Sandberg
-    Great leaders are almost always great simplifiers, who can cut through argument, debate, and doubt to offer a solution everybody can understand.
-    Colin Powell
     Do not follow where the path may lead. Go instead where there is no path and leave a trail.
     Ralph Waldo Emerson
     A man who wants to lead the orchestra must turn his back on the crowd.
@@ -509,8 +507,6 @@ let sourceQuote =
     Dale Carnegie
     When you have lost hope, you have lost everything. And when you think all is lost, when all is dire and bleak, there is always hope.
     Pittacus Lore
-    Hope means expectancy when things are otherwise hopeless.
-    G. K. Chesterton
     However bad life may seem, there is always something you can do and succeed at. Where there’s life, there’s hope.
     Stephen Hawking
     Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for.
@@ -547,8 +543,6 @@ let sourceQuote =
     Henry David Thoreau
     Hope is itself a species of happiness, and, perhaps, the chief happiness which this world affords.
     Samuel Johnson
-    Hope teaches endurance and an eager anticipation of that which will become reality.
-    Simon J. Kistemaker
     Once you choose hope, anything’s possible.
     Christopher Reeve
     Children are the world’s most valuable resource and its best hope for the future.
@@ -563,8 +557,6 @@ let sourceQuote =
     G. K. Chesterton
     You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty.
     Mahatma Gandhi
-    When hope animates us there is a vigour in the whole body.
-    John Calvin
     Neither should a ship rely on one small anchor, nor should life rest on a single hope.
     Epictetus
     The nearer to heaven in hopes, the farther from earth in desires.
@@ -659,8 +651,6 @@ let sourceQuote =
     Lemony Snicket
     Our greatest glory is not in never falling, but in rising every time we fall.
     Confucius
-    Hope is not an emotion; it’s a way of thinking or a cognitive process.
-    Brené Brown
     When you’re at the end of your rope, tie a knot and hold on.
     Theodore Roosevelt
     What seems to us as bitter trials are often blessings in disguise.
