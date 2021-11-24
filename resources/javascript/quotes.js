@@ -151,8 +151,6 @@ let sourceQuote =
     Jim Rohn
     The pessimist complains about the wind. The optimist expects it to change. The leader adjusts the sails.
     John C. Maxwell
-    A good leader takes a little more than his share of the blame, a little less than his share of the credit.
-    Arnold Glasow
     Effective leadership is not about making speeches or being liked; leadership is defined by results, not attributes.
     Peter F. Drucker
     Great leaders are not defined by the absence of weakness, but rather by the presence of clear strengths.
