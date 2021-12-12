@@ -1,6 +1,6 @@
 # Quotes-manager:  Quote-Wiser
 
-## This projects continues in a new version here: **https://wolf-ed.github.io/quotes-lab/**
+## This project continues in a new version here: **https://wolf-ed.github.io/quotes-lab/**
 
 ## Author:  Ed Wolf
 ## Table of contents
